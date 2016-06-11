@@ -12,7 +12,7 @@ title: Telegram Bot Support
 	console.log(code);
 	var encoded = base64url_encode(code)
 	// window.open("https://telegram.me/Learn1Bot?start=" + encoded,"_self")
-	window.open("https://telegram.me/Learn1Bot?start=" + encoded,"_self")
+	window.open("https://telegram.me/Learn1Bot?start=" + encoded.substring(0, encoded.length-2),"_self")
 
 	/* base64_encode_data
 	 * Internal helper to encode data to base64 using specified dictionary.
@@ -21,7 +21,6 @@ title: Telegram Bot Support
 	function base64_encode_data(data, len, b64x) {
 	    var dst = ""
 	    var i
-	    console.log("data is " +data)
 	    for (i = 0; i <= len - 3; i += 3)
 	    {
 	        dst += b64x.charAt(data.charCodeAt(i) >>> 2)
@@ -54,7 +53,6 @@ title: Telegram Bot Support
 	 */
 	function base64_encode(str) {
 	    var utf8str = unescape(encodeURIComponent(str))
-	    console.log(utf8str)
 	    return base64_encode_data(utf8str, utf8str.length, b64c)
 	}
 
@@ -64,8 +62,6 @@ title: Telegram Bot Support
 	 */
 	function base64url_encode(str) {
 	    var utf8str = unescape(encodeURIComponent(str))
-	    console.log(utf8str)
-	    console.log("b64u is " + b64u)
 	    return base64_encode_data(utf8str, utf8str.length, b64u)
 	}
 
