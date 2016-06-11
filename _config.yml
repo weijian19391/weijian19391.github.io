@@ -1,3 +1,4 @@
 name: Marcus Leong Wei Jian
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+permalink: /projects/:title
