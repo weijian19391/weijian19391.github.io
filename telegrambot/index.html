@@ -13,6 +13,9 @@ title: Telegram Bot Support
 	/* base64_encode_data
 	 * Internal helper to encode data to base64 using specified dictionary.
 	 */
+	 var b64c = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"   // base64 dictionary
+	 var b64u = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"   // base64url dictionary
+	 var b64pad = '='
 	function base64_encode_data(data, len, b64x) {
 	    var dst = ""
 	    var i
