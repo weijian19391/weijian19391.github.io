@@ -1,38 +1,8 @@
-<!-- This is our main layout that will contain repeated elements like our <head> and <footer>. Now we won't have to repeat that markup on every single page we create, making maintenance of our site much easier. -->
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>Telegram Bot Support</title> <!--liquid tags-->
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-38506466-1', 'jmcglone.com');
-			ga('send', 'pageview');
-			// var i = 0;
-			// for (var i = 0; i < 10; i++) {
-			// 	console.log(window.location.href  + i)
-			// }
-			// window.open("https://telegram.me/Learn1Bot","_self")
-</script>
-		</head>
-		<body>
-			<nav>
-					<ul>
-							<li><a href="/">Home</a></li>
-							<li><a href="/cv">CV</a></li>
-							<li><a href="/blog">Blog</a></li>
-							<li><a href="/projects">Projects</a></li>
-							<li><a style="pointer-events: none; cursor: default; color:white;" href="/telegrambot"> Hi There :)</a></li>
-							<li><a style="pointer-events: none; cursor: default; color:white;" href="/telegrambottest"> Wanna know the secret? =p</a></li>
-					</ul>
-			</nav>
-			<div class="container">
-			
-			<script>
+---
+layout: default
+title: Telegram Bot Support
+---
+<script>
 	var b64c = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"   // base64 dictionary
 	var b64u = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"   // base64url dictionary
 	var b64pad = '='
@@ -141,15 +111,3 @@
 	}
 </script>
 
-
-			
-			</div><!-- /.container -->
-			<footer>
-					<ul>
-							<li>Email: <a href="mailto:weijian19391@gmail.com">weijian19391@gmail.com</a></li>
-							<li>Github: <a href="https://github.com/weijian19391">github.com/weijian19391</a></li>
-
-				</ul>
-			</footer>
-		</body>
-	</html>
